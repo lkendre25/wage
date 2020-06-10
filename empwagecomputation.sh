@@ -4,7 +4,7 @@ echo "Welcome to employee wage computation!!"
 
 
 ispresent=0
-if [$ispresent -et $((RANDOM))];
+if [ $ispresent -eq $((RANDOM)) ]
 then
 	echo "Present"
 else
