@@ -3,10 +3,11 @@
 echo "Welcome to employee wage computation!!"
 
 
-ispresent=0
-if [ $ispresent -eq $((RANDOM)) ]
+
+ispresent=1
+if [ $ispresent -eq $(( 1 + RANDOM % 2 )) ]
 then
-	echo "Present"
+	echo "Present !! "
 else
 echo "Not Present!!"
 fi
