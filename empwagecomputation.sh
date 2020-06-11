@@ -1,13 +1,9 @@
 #!/bin/bash
 
-echo "Welcome to employee wage computation!!"
+echo "Welcome to employee wage computation!"
 
+wagePerHour=20
+fullDayHours=8
 
-
-ispresent=1
-if [ $ispresent -eq $(( 1 + RANDOM % 2 )) ]
-then
-	echo "Present !! "
-else
-echo "Not Present!!"
-fi
+oneDayWage=$[wagePerHour*$fullDayHours]
+echo $oneDayWage
